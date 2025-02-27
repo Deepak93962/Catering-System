@@ -1,0 +1,79 @@
+/* Existing CSS Code */
+
+body {
+    font-family: Arial, sans-serif;
+    background: url('background.jpg') no-repeat center center fixed;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    color: white;
+}
+
+#auth-section, #dashboard {
+    max-width: 400px;
+    margin: auto;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.7);
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+
+input, button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: none;
+}
+
+button {
+    background-color: #28a745;
+    color: white;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #218838;
+}
+
+.dashboard {
+    margin-top: 20px;
+    padding: 20px;
+}
+
+.dashboard h2 {
+    color: #ffcc00;
+}
+
+.dashboard button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin: 10px 5px;
+    border-radius: 5px;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    font-size: 16px;
+}
+
+.dashboard button:hover {
+    background-color: #0056b3;
+}
+
+/* Data Display Section */
+#data-display {
+    display: none;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    margin-top: 20px;
+    color: black;
+    text-align: left;
+    font-size: 16px;
+    width: 80%;
+    max-width: 600px;
+    margin: auto;
+}

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catering System</title>
+    <link rel="stylesheet" href="style.css">
+    <script type="module" src="script.js"></script>
+</head>
+<body>
+
+    <!-- Authentication Section -->
+    <div id="auth-section">
+        <h1>🍽️ Catering System</h1>
+
+        <!-- Login Form -->
+        <div id="login-section">
+            <h2>Login</h2>
+            <input type="email" id="loginEmail" placeholder="Email">
+            <input type="password" id="loginPassword" placeholder="Password">
+            <button id="loginBtn">Login</button>
+            <p>Don't have an account? <a href="javascript:void(0);" onclick="showSignup()">Sign up</a></p>
+        </div>
+
+        <!-- Signup Form -->
+        <div id="signup-section" style="display: none;">
+            <h2>Sign Up</h2>
+            <input type="email" id="signupEmail" placeholder="Email">
+            <input type="password" id="signupPassword" placeholder="Password">
+            <button id="signupBtn">Sign Up</button>
+            <p>Already have an account? <a href="javascript:void(0);" onclick="showLogin()">Login</a></p>
+        </div>
+    </div>
+
+    <!-- Dashboard Section -->
+    <div id="dashboard" style="display: none;">
+        <h1>Welcome to Catering System</h1>
+        
+        <div class="dashboard">
+            <h2>Menu Management</h2>
+            <button id="addMenuItemBtn">➕ Add Menu Item</button>
+            <button onclick="viewMenu()">📜 View Menu</button>
+
+            <h2>Inventory Management</h2>
+            <button id="addInventoryItemBtn">📦 Add Inventory Item</button>
+            <button onclick="viewInventory()">📊 View Inventory</button>
+
+            <h2>Order Management</h2>
+            <button id="takeOrderBtn">🛒 Take Order</button>
+            <button onclick="viewOrders()">📜 View Orders</button>
+            <button onclick="completeOrder()">✅ Mark Order as Completed</button>
+
+            <button onclick="logoutUser()">🚪 Logout</button>
+        </div>
+    </div>   
+    <div id="data-display" style="display: none; padding: 20px; background: rgba(255, 255, 255, 0.9); border-radius: 10px; margin-top: 20px;">
+        <h2 id="data-title">📊 Data Display</h2>
+        <pre id="data-content" style="white-space: pre-wrap; font-size: 16px; color: black;"></pre>
+    </div>           
+</body>
+</html>

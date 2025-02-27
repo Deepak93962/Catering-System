@@ -1,0 +1,14 @@
+{
+  "name": "catering-system",
+  "version": "1.0.0",
+  "description": "Advanced Catering System with Firebase",
+  "main": "script.js",
+  "scripts": {
+    "start": "npx http-server public",
+    "deploy": "firebase deploy"
+  },
+  "dependencies": {
+    "firebase": "^10.7.1",
+    "http-server": "^14.1.1"
+  }
+}
